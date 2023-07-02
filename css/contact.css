@@ -1,0 +1,123 @@
+.contact-welcome {
+    background-color: var(--bg-blue);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.section-box {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: var(--spacing-m);
+}
+
+.groupper h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-l);
+    padding-top: var(--spacing-l);
+}
+
+.main-p {
+    margin-bottom: var(--spacing-l);
+}
+
+.contact-white-section p {
+    font-size: var(--fs-2);
+}
+
+/* 2. SECTION INFO-LINE-CONTAINER */
+
+.info-container {
+    display: flex;
+    margin-bottom: var(--spacing-l);
+}
+
+.info-list, .info-form {
+    width:calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-m);
+    list-style: none;
+}
+
+.info-container li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: var(--spacing-s);
+    margin-bottom: var(--spacing-l);
+    border-bottom: 1px solid #ddd;
+}
+
+.info-list p, .info-list a, .info-form {
+    font-size: var(--fs-2);
+}
+
+.info, .info-list a {
+    color: #8e8e8e;
+}
+
+.info-container .material-icons {
+        vertical-align: middle;
+        color: var(--text-blue);
+}
+
+.info-list a:hover {
+    color:var(--text-blue-dark);
+}
+
+
+.info-form label {
+    color: var(--text-blue-dark);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--fs-2);
+}
+
+.info-form input, .info-form textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: var(--spacing-m);
+    color: var(--text-blue-dark);
+    padding: var(--spacing-s);
+    font-size: var(--fs-2);
+}
+
+.info-form textarea {
+    height: 100px;
+}
+
+.info-form input[type="submit"] {
+    font-size: var(--fs-2);
+    text-align: center;
+    color: var(--text-white);
+    background-color: var(--button-green);
+    border: 1px solid var(--button-green);
+    border-radius: 5px;
+    padding: var(--spacing-s);
+    width: 100px;
+}
+
+
+@media (max-width: 992px) {
+    .card-wrapper {
+        width: calc(100%/2);
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .contact-welcome-h1 {
+        font-size: 2rem;
+    }
+    .info-list, .info-form {
+        width: calc(100%);
+    }
+    .info-container {
+        flex-wrap: wrap;
+    }
+}

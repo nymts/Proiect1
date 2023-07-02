@@ -1,0 +1,153 @@
+.c-welcome {
+    background-color: var(--bg-blue);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.section-box {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+}
+    
+.c-white-section .section-box {
+    padding-top: var(--spacing-m) ;
+    padding-bottom:var(--spacing-m) ;
+    padding-left: var(--spacing-s);
+    padding-right: var(--spacing-s);
+}
+
+.groupper {
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.groupper h2 {
+    text-align: center;
+}
+
+.groupper h2 {
+    margin-bottom: var(--spacing-l);
+    padding-top: var(--spacing-l);
+}
+.main-p {
+    font-size: var(--fs-2);
+    color: var(--text-blue-dark);
+    margin-left: var(--spacing-s);
+    margin-right: var(--spacing-s);
+    margin-bottom: var(--spacing-l);
+    text-align: center;
+}
+
+.card-groupper {
+    margin-bottom: var(--spacing-l);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* CARDS */
+.card-wrapper {
+    width: calc(100%/3);
+    padding-right: var(--spacing-s);
+    padding-left: var(--spacing-s);
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: var(--spacing-m);
+    padding: var(--spacing-xs);
+}
+
+.card-content {
+    padding: 0 var(--spacing-s);
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-l);
+}
+
+h3 {
+    color: var(--text-blue);
+    margin-bottom: var(--spacing-m);
+    font-size: 1.5rem;
+}
+
+.row1 {
+    color: #666;
+    margin-bottom: var(--spacing-m);
+    font-size: var(--fs-2);
+    height: 24px;
+
+}
+
+.microsoft-logo {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: var(--spacing-s);
+}
+
+.row2, .row2 .material-icons {
+    font-size: var(--fs-2);
+    color: #666;
+}
+
+.row2 {
+    margin-bottom: var(--spacing-m);
+}
+
+.luni, .ore {
+    margin-left:var(--spacing-s);
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+
+.card-content a {
+    display:flex;
+    justify-content: center;
+    font-size: var(--fs-2);
+    text-align: center;
+    width: 100px;
+
+    color: var(--text-white);
+    background-color: var(--button-green);
+    border: 1px solid var(--button-green);
+    border-radius: 5px;
+
+    padding: var(--spacing-xs);
+    margin-bottom: 16px;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .card-wrapper {
+        width: calc(100%/2);
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .c-welcome h1 {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .card-wrapper {
+        width: calc(100%);
+    }
+}
